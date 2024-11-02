@@ -5,7 +5,7 @@ const TodoItems = ( { todo, toggleTask, removeTask } ) => {
     return (
 		<div className="main-task">
 			<div className="main-task__text" onClick={() => toggleTask(todo.id)}>
-				{todo.task.userInput}
+				{todo.task}
 				</div>
 				<div className='TodoIcon'>
 					<Krest onClick={() => removeTask(todo.id)} />

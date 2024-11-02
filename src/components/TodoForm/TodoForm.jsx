@@ -10,7 +10,7 @@ export const TodoForm = ({addTask}) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
-		addTask({userInput})
+		addTask(userInput)
 		setUserInput('')
 	}
 

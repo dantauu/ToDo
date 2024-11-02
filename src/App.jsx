@@ -14,7 +14,7 @@ export default function App() {
 				completed: false,
 			}
 			setTodos([newTask, ...todos])
-		}
+		} 
 	}
 	console.log(todos)
 
