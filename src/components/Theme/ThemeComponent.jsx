@@ -5,9 +5,13 @@ import { ThemeContext } from "../../Providers/ThemeProviders"
 
 
 export const ThemeComponent = () => {
-    const [theme, setTheme] = useContext(ThemeContext)
+    const [theme, setTheme] = useContext(ThemeContext)	
 		const changeTheme = () => {
 			setTheme(theme === 'light' ? 'dark' : 'light')
 		}
-        return <Moon onClick={changeTheme} />
+        return ( 
+			<>
+		<Moon onClick={changeTheme} />
+	</>
+	)
 }
