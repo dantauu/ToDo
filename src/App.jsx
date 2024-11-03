@@ -1,9 +1,12 @@
 import TodoForm from './components/TodoForm/TodoForm'
 import TodoItems from './components/TodoItems/TodoItems'
 import { useState } from 'react'
+import { ThemeProviders } from './Providers/ThemeProviders'
 import './App.css'
+import { ThemeComponent } from './components/Theme/ThemeComponent'
 
 export default function App() {
+
     const [todos, setTodos] = useState([])
 
 	const addTask = (userInput) => {
@@ -29,19 +32,24 @@ export default function App() {
 	}
 
     return (
-				<div className='container'>
-					<div className='TodoMain'>
-						<h1>Notes To</h1>
-						<TodoForm addTask={addTask} />
-						{todos.map((todo) => (
-							<TodoItems 
-								todo={todo} 
-								key={todo.id} 
-								toggleTask={toggleTask} 
-								removeTask={removeTask} 
-							/>
-						))}
+			<>
+				<ThemeProviders>
+					<div className='container'>
+						<div className='TodoMain'>
+							<ThemeComponent />
+							<h1 className='notes-text'>Notes To</h1>
+							<TodoForm addTask={addTask} />
+							{todos.map(todo => (
+								<TodoItems
+									todo={todo}
+									key={todo.id}
+									toggleTask={toggleTask}
+									removeTask={removeTask}
+								/>
+							))}
+						</div>
 					</div>
-				</div>
+				</ThemeProviders>
+			</>
 		)
 }

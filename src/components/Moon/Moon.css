@@ -1,0 +1,11 @@
+
+.moon-btn {
+    border: none;
+    background: none;
+    filter: drop-shadow(0 0 10px var(--moon-btn-drop-shadow));
+    cursor: pointer;
+}
+
+.moon-img {
+    width: 50px;
+}

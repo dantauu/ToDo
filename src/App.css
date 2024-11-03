@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.088);
+    background: var(--wrapper-background-color);
 }
 
 ul,
@@ -41,4 +41,34 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.notes-text {
+    color: var( --notes-text-color);
+}
+
+/* DARK THEME */
+
+body {
+    --wrapper-background-color: #fff;
+    --notes-text-color: #000;
+    --todo-form-border-color: #2981f5;
+    --todo-button-background-color: #2981f5;
+    --todo-button-border-color: #2981f5;
+    --todo-button-color: #fff;
+    --moon-btn-drop-shadow: #000;
+    --main-task-background-color: 
+    linear-gradient(90deg, #2349dfdc, #0e30b8ba, #0726a0ba);
+}
+
+body.dark {
+    --wrapper-background-color: #141414;
+    --notes-text-color: #fff;
+    --todo-form-border-color: #fff;
+    --todo-button-background-color: #fff;
+    --todo-button-border-color: #fff;
+    --todo-button-color: #000;
+     --moon-btn-drop-shadow: #fff;
+      --main-task-background-color: 
+     linear-gradient(90deg, #2981f5, #1978f5, #7db1f4);
 }

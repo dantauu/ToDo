@@ -1,9 +1,9 @@
 
 .todo-button {
     padding: 10px 20px;
-    background-color: #2981f5;
-    border: 4px solid #2981f5;
+    background-color: var(--todo-button-background-color);
+    border: 4px solid var(--todo-button-border-color);
     border-radius: 0 7px 7px 0;
-    color: #fff;
+    color: var(--todo-button-color);
     cursor: pointer;
 }
