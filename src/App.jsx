@@ -2,8 +2,8 @@ import TodoForm from './components/TodoForm/TodoForm'
 import TodoItems from './components/TodoItems/TodoItems'
 import { useState } from 'react'
 import { ThemeProviders } from './Providers/ThemeProviders'
-import './App.css'
 import { ThemeComponent } from './components/Theme/ThemeComponent'
+import './App.css'
 
 export default function App() {
 
